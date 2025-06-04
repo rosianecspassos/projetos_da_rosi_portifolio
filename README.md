@@ -9,4 +9,3 @@ Desenvolvido em PHP, com uso de Laravel Framework 12.x, banco de dados Mysql, HT
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# projetos_da_rosy_portifolio
