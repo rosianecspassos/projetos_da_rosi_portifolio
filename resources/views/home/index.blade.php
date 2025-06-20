@@ -165,14 +165,8 @@
 @endsection
 
  
-
-
 @section('projetos')
     @include('home.projetos')  
-@endsection
-
-@section('cursos')
-    @include('home.cursos')
 @endsection
 
 @section('contato')
