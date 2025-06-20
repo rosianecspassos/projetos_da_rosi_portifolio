@@ -1,205 +1,213 @@
 @import "bootstrap/scss/bootstrap";
-
+/*  ./vendor/bin/sail artisan config:clear
+ ./vendor/bin/sail artisan config:cache
+*/
 //Cores
-$azulescuro:#04234d;
-$preto:#241616;
-$primary:#103077;
-$branco:#fdf9f9;
-$azul:#0169fc;
+
+$azulescuro: #04234d;
+$preto: #241616;
+$primary: #103077;
+$branco: #fdf9f9;
+$azul: #0169fc;
 
 
 $theme-colors: (
-  "azulescuro": $azulescuro,  
+  "azulescuro": $azulescuro,
   "preto": $preto,
   "primary":$primary,
-    "azul":$azul,
+  "azul":$azul,
   "branco": $branco
-
 );
 
 //Layout das páginas 
- body {
-      font-family: Arial, sans-serif;
-    }
+body {
+  font-family: Arial, sans-serif;
+}
+
 // Barra de navegação
-    header {
-      border-bottom: 1px solid #ccc;
+header {
+  border-bottom: 1px solid #ccc;
 
-    }
-      .navbar-toggler {
-      border: none;
-    }
+}
+
+.navbar-toggler {
+  border: none;
+}
 
 
-    .navbar-brand img {
-      height: 40px;
-      width: auto;
-    }
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
 
-    //Perfil
+//Perfil
 
-    .redes_sociais ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
+.redes_sociais ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
-    .redes_sociais i {
-      font-size: 1.2rem;
-      color: #333;
-    }
+.redes_sociais i {
+  font-size: 1.2rem;
+  color: #333;
+}
 
-    .redes_sociais a:hover i {
-      color: #007bff;
-    }
+.redes_sociais a:hover i {
+  color: #007bff;
+}
 
-    .card-img-top {
-      object-fit: cover;
-    }
+.card-img-top {
+  object-fit: cover;
+}
 
 
 
 //Páginas de cadastros e menu de acesso
-.menuacesso{
-    display:inline-block;
-    margin-right: 30px;
- //   margin-bottom: 50px;
- z-index: 1;
+.menuacesso {
+  display: inline-block;
+  margin-right: 30px;
+  //   margin-bottom: 50px;
+  z-index: 1;
 }
-   
-    
-    .dropbtn {
-        background-color:$primary;
-        color:$branco;
-        padding: 12px;
-        font-size: 12px;
-        border: none;
-        cursor: pointer;
-      }
-      .dropdown-content {
-        display: none;
-        background-color:$branco;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: -1;
 
-      }
-      .dropdown-content a {
-        color: $azulescuro;
-        padding: 10px 12px;
-        font-size: 14px;
-        text-decoration: none;
-        display: block;
-        font-style: normal;
-        font-weight: bolder;
 
-      }
+.dropbtn {
+  background-color: $primary;
+  color: $branco;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
 
-.dropdown-content button{
+.dropdown-content {
+  display: none;
+  background-color: $branco;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+
+}
+
+.dropdown-content a {
+  color: $azulescuro;
+  padding: 10px 12px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-style: normal;
+  font-weight: bolder;
+
+}
+
+.dropdown-content button {
   font-weight: bolder;
   font-size: 14px;
 
 }
 
 
-      .dropdown-content a:hover {
-        background-color: $azul;
-        color:$preto;
+.dropdown-content a:hover {
+  background-color: $azul;
+  color: $preto;
 
-    }      
-    .menuacesso:hover .dropdown-content {
-        display: block;
-      }
+}
 
-      .menuacesso:hover .dropbtn {
-        background-color: $azul;
-        color:$branco;
-        
-      }
+.menuacesso:hover .dropdown-content {
+  display: block;
+}
+
+.menuacesso:hover .dropbtn {
+  background-color: $azul;
+  color: $branco;
+
+}
 
 
 
 
-      .btncadastroconteudo {
-        display:inline-block;
-        margin-right: 30px;
-     //   margin-bottom: 50px;
-     z-index: 1;
-    }
-       
-        
-        .dropbtn {
-            background-color:$primary;
-            color:$branco;
-            padding: 12px;
-            font-size: 12px;
-            border: none;
-            cursor: pointer;
-          }
-          .dropdown-content {
-            display: none;
-            background-color:$branco;
-            min-width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: -1;
-    
-          }
-          .dropdown-content a {
-            color: $azulescuro;
-            padding: 10px 12px;
-            font-size: 14px;
-            text-decoration: none;
-            display: block;
-            font-style: normal;
-            font-weight: bolder;
-    
-          }
-    
-    .dropdown-content button{
-      font-weight: bolder;
-      font-size: 14px;
-    
-    }
-    
-    
-          .dropdown-content a:hover {
-            background-color: $azul;
-            color:$preto;
-    
-        }      
-        .btncadastroconteudo:hover .dropdown-content {
-            display: block;
-          }
-    
-          .btncadastroconteudo:hover .dropbtn {
-            background-color: $azul;
-            color:$branco;
-            
-          }
+.btncadastroconteudo {
+  display: inline-block;
+  margin-right: 30px;
+  //   margin-bottom: 50px;
+  z-index: 1;
+}
 
-      
+
+.dropbtn {
+  background-color: $primary;
+  color: $branco;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: $branco;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+
+}
+
+.dropdown-content a {
+  color: $azulescuro;
+  padding: 10px 12px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-style: normal;
+  font-weight: bolder;
+
+}
+
+.dropdown-content button {
+  font-weight: bolder;
+  font-size: 14px;
+
+}
+
+
+.dropdown-content a:hover {
+  background-color: $azul;
+  color: $preto;
+
+}
+
+.btncadastroconteudo:hover .dropdown-content {
+  display: block;
+}
+
+.btncadastroconteudo:hover .dropbtn {
+  background-color: $azul;
+  color: $branco;
+
+}
+
+
 //Rodapé    
-  
-    footer {
-      height: 70px; 
 
-    }
+footer {
+  height: 70px;
 
-    footer p{
-      font-size:15px;
-    }
-    
-    footer i {
-      font-size: 15px;
-      color: #ffff;
-    }
+}
 
-      footer a:hover i {
-      color: #007bff;
-    }
+footer p {
+  font-size: 15px;
+}
 
+footer i {
+  font-size: 15px;
+  color: #ffff;
+}
 
+footer a:hover i {
+  color: #007bff;
+}
 
