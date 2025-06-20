@@ -6,36 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title') | Home</title> 
 @vite('resources/js/app.js')
-
      </head> 
-     <body> 
-    
-<div class="container-fluid nav_header w-100 "> 
+    <body class="bg-light">
 @yield('header')
-</div> 
-<div class= "container-fluid w-100 conteudo mt-0 pt-5 pb-5 position-relative"> 
+  <main class="container mt-4">
 @yield('conteudo')
-</div> 
 
-    <section class=" portifolio py-5 mb-0 w-100">
-
+    <section class="mt-5">
 @yield('projetos')
-</section> 
-    <section class=" cursos py-5 mt-0 mb-0 w-100">
 
-@yield('cursos')
 </section> 
+    <section class="mt-5">
 
-    <section class="contatos pt-5 py-5 mt-0 mb-0 pt-2 pb-">
 @yield('contato')
 </section> 
-<div class="container-fluid-xxl footer bg-dark m-0 "> 
+</main>
+  <!-- Footer -->
+  <footer class="bg-dark text-light mt-5 py-4">
 @yield('footer')
-</div> 
-
-
-
-
+</footer> 
 </body> 
-
 </html> 
