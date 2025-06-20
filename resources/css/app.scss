@@ -1,10 +1,6 @@
 @import "bootstrap/scss/bootstrap";
-/*  ./vendor/bin/sail artisan config:clear
- ./vendor/bin/sail artisan config:cache
-*/
+
 //Cores
-
-
 $azulescuro:#04234d;
 $preto:#241616;
 $primary:#103077;
@@ -16,92 +12,57 @@ $theme-colors: (
   "azulescuro": $azulescuro,  
   "preto": $preto,
   "primary":$primary,
+    "azul":$azul,
   "branco": $branco
 
 );
 
+//Layout das páginas 
+ body {
+      font-family: Arial, sans-serif;
+    }
+// Barra de navegação
+    header {
+      border-bottom: 1px solid #ccc;
 
-//CSS
-.nav_header .nav span{
-margin-right: 50px;
-
-}
-
-.nav_header .nav img{
-  height:120px;
-  width: 118px;
-  margin-top:-60px; 
-  float:left;
-  margin-right: -12px;
-}
+    }
+      .navbar-toggler {
+      border: none;
+    }
 
 
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+    }
+
+    //Perfil
+
+    .redes_sociais ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .redes_sociais i {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .redes_sociais a:hover i {
+      color: #007bff;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+    }
 
 
-.nav_header{
-    margin-top:0px; 
-    margin-left:0px;
-    margin-right: 0px;
-    background-color: $azulescuro;
-    
-}
 
-
-.nav{
-  padding-top:4px; 
-  background-color: $azulescuro;
-  
-}
-.nav h1{
-    font-size: 20px;
-    color:$branco;
-    float:left;
-    font-weight: 600;
-    font-family: 'Arial Narrow Bold', sans-serif;
-
-}
-
-
-.nav .menu{
-margin-top: -30px;
-margin-right:200px;
-}
- .nav .menu ul{
-    list-style: none;
-   // margin-top: 0px;
-
-}
-
-.nav .menu ul li{
-    display:inline;
-}
-
-.nav .menu li{
-    margin-right: 14px;
-}
-
-
-.nav a {
-    text-decoration: none;
-    color:$branco;
-    font-weight: 600;
-    font-family:'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
-    
-}
-
-.nav ul li a:active{
-background-color:$primary;
-color:$azul;
-}
-
-.nav ul li a:hover{
-    color:$azul;
-    background-color:$primary;
-    padding:8px;
-}
-
-
+//Páginas de cadastros e menu de acesso
 .menuacesso{
     display:inline-block;
     margin-right: 30px;
@@ -218,274 +179,27 @@ color:$azul;
             color:$branco;
             
           }
-    
-    .conteudo{
-      position:absolute;
-      background-color: $azulescuro;
-    }
 
-    .conteudo .card{
-     background-color: $primary;
-    }
-
-    .conteudo h1{
-      color:$branco;
-      font-size: 18px;
-    }
-
-    .conteudo h3{
-      color:$branco;
-      font-size: 14px;
-      font-style: italic;
-    }
-
-
-    .conteudo .card-title {
-      color:$azul;
-    }
-    
-    .conteudo .card-text{
-      color:$branco;
-    }
-   
-    .conteudo .idiomas h5{
-      font-size: 16px;
-      font-weight: bold;
-      color:$azul;
-    }
-    
-   
-    .conteudo .idiomas p{
-      font-size: 14px;
-      font-weight: bold;
-      color:$branco;
-    }
-
-    .conteudo .btn {
-      font-weight: bold;
-      float:right;
-
-    }
-
-    .card img{
-      height: 180px;
-      width: 180px;
-      border:none;
-      margin-left: 60px;
-    }
-
-    .redes_sociais ul{
-      margin-right: 26px;
-
-    }
-
-    .redes_sociais   ul li{
-      display:inline;
-  }
- .redes_sociais li{
-  margin-right: 4px;
-}
-    .redes_sociais a{
-      color:$azul;
-    }
-
-   
-
-    .formacao {
-      display: flex;
-      flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha se não houver espaço suficiente */
-      gap: 10px; /* Espaço entre os itens */
-  }
-  .col_experiencia{
- margin-top:25px;
-  }
-  
-
-  .card_experiencia h5{
-    margin-left:28px;
-
-  }
-  .experiencia li {
-    list-style-type:none;
-  }
-
-
-
-
-    .portifolio{
-      background-color: $preto;
-    }
-    .portifolio a {
-      text-decoration: none;
-    }
-    .portifolio h4{
-      color:$azul;
-      font-weight: bold;
-      font-size: 30px;
-    }
-
-    .portifolio p{
-      text-align: justify;
-    }
-
-   .portifolio .col-sm-1 i {
-    font-size: 32px;
-  
-   }
-    .portifolio .card-title{
-      color:$primary;
-    }
-    
-    .portifolio .col-sm-1{
-      float:right;
-      margin-top: 3px;
       
-    }
-
-    .cursos{
-      margin:0px; 
-      background-color: $azulescuro;
-    }
-
-    .cursos h4{
-      color:$azul;
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    .cursos p{
-      color:$preto;
-    }
-
-    .cursos a {
-      float:right;
-    }
-
-    .cursos i{
-    margin-right:8px;
-    color:$azul;
-    font-size: 25px;
-    }
-
-    .cursos h3{
-      font-size: 23px;
-      color:$azul;
-      margin-bottom:0px;
-    }
-
-    .contatos{
-      background-color: $azulescuro;
-      //padding-top: 400px;
-    }
-
-    .esquerda{
-    background-color: $primary;
-    margin:0px; 
-    float:left; 
-    width: 30%;
-    height: 400px;
-
-    
-    }
-
-    .esquerda h5{
-      margin-top:120px;
-      color:$branco;
- 
-     }
-
-    .esquerda span{
-     margin-top:122px;
-     color:$branco;
-    }
-    .esquerda span p{
-     margin-bottom: 0px;
-     }
+//Rodapé    
   
+    footer {
+      height: 70px; 
 
-    .direita{
-     background-color: $azul;
-      margin:0px; 
-      float:right; 
-      width: 70%;
-      height: 400px;
+    }
+
+    footer p{
+      font-size:15px;
+    }
     
+    footer i {
+      font-size: 15px;
+      color: #ffff;
     }
 
-    .direita h5{
-      margin-top:28px;
-      color:$primary;
-    }
-   
- 
-    .direita span{
-      margin-top:35px;
+      footer a:hover i {
+      color: #007bff;
     }
 
 
 
-    .btnContato button {
-      background-color: $primary;
-      color:$branco; 
-      font-weight: 600;
-
-    }
-
-.componentsapplication {
-  margin-right:50px ;
-  margin-bottom: 4px;
-}
-
-
-  .componentsapplication img{
-    height:120px;
-    width: 118px;
-    margin-top:-60px; 
-    float:left;
-    margin-right: -12px;
-  }
-
- .componentsapplication h5{
-    font-size: 20px;
-    color:#004aad;
-    float:left;
-    font-weight: 600;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    text-decoration: none;
-
-}
-
-
-.fw-normal{
-color: $azul; 
-}
-
-
-    .footer{
-      width: 100%;
-      //background-color: $preto;
-      padding-top:20px;
-      padding-bottom: 20px;
-      margin:0px;
-
-    }
-
-    .footer ul{
-      margin-right: 26px;
-
-    }
-
-    .footer ul li{
-      display:inline;
-  }
- .footer li{
-  margin-right: 4px;
-}
-    .footer a{
-      color:$branco;
-    }
-
-   
-    .footer ul{
-      list-style: none;
-    }
