@@ -8,31 +8,25 @@
 @vite('resources/js/app.js')
 
      </head> 
-     <body> 
+<body class="bg-light">
     
-<div class="container-fluid nav_header w-100 "> 
+
 @yield('header')
-</div> 
-<div class= "container-fluid w-100 conteudo mt-0 pt-5 pb-5 position-relative"> 
+
+  <main class="container py-5">
+
 @yield('conteudo')
-</div> 
 
-<div class="container-fluid portifolio w-100 mt-0 pt-1 pb-5"> 
 
-</div> 
-<div class="container-fluid w-100 cursos w-100 pt-2 pb-5"> 
 @yield('cursos')
-</div> 
 
-
-
-
-
-<div class="container-fluid-xxl footer bg-dark m-0 "> 
+</main> 
+  <!-- Footer -->
+  <footer class="bg-dark text-light mt-5 py-4">
 @yield('footer')
-</div> 
+</footer> 
 
-</div>
+
 
 
 </body> 

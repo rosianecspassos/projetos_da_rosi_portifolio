@@ -8,22 +8,17 @@
 @vite('resources/js/app.js')
 
      </head> 
-     <body> 
+
     
-<div class="container-fluid nav_header w-100 "> 
+<body class="bg-light">
 @yield('header')
-</div> 
 
-
-<div class="container-fluid portifolio w-100 mt-0 pt-1 pb-5"> 
+  <main class="container py-5">
 @yield('conteudo')
-</div> 
-
-<div class="container-fluid-xxl footer bg-dark m-0 "> 
+</main>
+  <footer class="bg-dark text-light py-4">
 @yield('footer')
-</div> 
-
-</div>
+  </footer>
 
 
 </body> 
