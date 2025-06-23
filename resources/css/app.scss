@@ -1,5 +1,7 @@
 @import "bootstrap/scss/bootstrap";
-
+/*  ./vendor/bin/sail artisan config:clear
+ ./vendor/bin/sail artisan config:cache
+*/
 //Cores
 
 $azulescuro: #04234d;
@@ -61,9 +63,14 @@ header {
 .card-img-top {
   object-fit: cover;
 }
+//Sobre 
 
-
-
+  .card.cursos-card {
+      background-color: #f8f9fa !important;
+      border: none !important;
+      color: #0b3d91 !important;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    }
 //Páginas de cadastros e menu de acesso
 .menuacesso {
   display: inline-block;
@@ -208,4 +215,3 @@ footer i {
 footer a:hover i {
   color: #007bff;
 }
-
